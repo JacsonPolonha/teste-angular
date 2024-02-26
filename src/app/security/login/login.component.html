@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content">
+        <h1>Faça login</h1>
+        <form [formGroup]="formLogin">
+            <label for="nome">Username</label>
+            <input type="text" name="nome" id="nome" formControlName="username">
+            <div class="alert" *ngIf="isFormControlInvalid('username')">O Username deve ter ao menos 5 caracteres</div>
+
+            <label for="senha">Password</label>
+            <input type="password" name="senha" id="senha" formControlName="password">
+
+            <input type="submit" value="Entrar" [disabled]="formLogin.valid">
+        </form>
+    </div>
+</div>

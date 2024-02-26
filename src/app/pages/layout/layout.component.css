@@ -1,0 +1,25 @@
+.container {
+    min-height: 97vh;
+}
+
+.container ul {
+    display: flex;
+    background-color: #fff;
+}
+
+.container ul li {
+    margin: 0 20px;
+    list-style: none;
+    font-size: 20pt;
+}
+
+.content {
+    background-color: #fff;
+    margin: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 0;
+}
